@@ -21,8 +21,8 @@ int main()
 
     std::cout << user1.id << '\n';
 
-    std::cout << (std::int32_t)user1.status << '\n';
-    std::cout << static_cast<std::int32_t>(user1.status) << '\n';
+    std::cout << (std::int32_t)user1.status << '\n'; // C-style cast, avoid this
+    std::cout << static_cast<std::int32_t>(user1.status) << '\n'; // C++ cast
 
     return 0;
 }
